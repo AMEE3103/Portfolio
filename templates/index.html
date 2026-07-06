@@ -4,116 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ameen Anas | Portfolio</title>
+  <meta name="description" content="Portfolio of Ameen Anas, a Computer Science student focused on Python, web development, and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="page-shell">
+    <header class="hero reveal">
+      <div class="hero-content">
+        <div class="profile-box">
+          <img class="profile-photo" src="{{ url_for('static', filename='images/AMEEN ANAS.jpeg') }}" alt="Ameen Anas profile picture">
+        </div>
         <p class="eyebrow">Portfolio</p>
-        <h1>Ameen Anas</h1>
-        <p class="subtitle">Computer Science Engineering Student | IHRD College of Engineering, Attingal</p>
+        <h1>Hi, I'm Ameen Anas</h1>
+        <div class="typing-line">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-text">I’m a Computer Science engineering student passionate about software development, modern web technologies, and building meaningful digital experiences.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{{ url_for('static', filename='files/ameen_resume.txt') }}" download>Download Resume</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
       </div>
-      <div class="hero-card">
-        <p><strong>Degree:</strong> Bachelor of Technology (B.Tech)</p>
-        <p><strong>Branch:</strong> Computer Science and Engineering (CSE)</p>
-        <p><strong>Expected Graduation:</strong> 2029</p>
+      <div class="hero-card glass-card">
+        <h3>Quick Overview</h3>
+        <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering</p>
+        <p><strong>College:</strong> IHRD College of Engineering, Attingal</p>
+        <p><strong>Graduation:</strong> 2029</p>
         <p><strong>Location:</strong> Attingal, Kerala, India</p>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <section class="section intro-section">
-      <h2>About Me</h2>
-      <p>I am a Computer Science and Engineering student at IHRD College of Engineering, Attingal, with a passion for software development and modern web technologies. I enjoy building practical applications that solve real-world problems while continuously expanding my technical knowledge and programming skills. I am committed to learning, improving, and creating meaningful digital experiences.</p>
-    </section>
+    <main class="container">
+      <section id="about" class="section reveal glass-card">
+        <h2>About Me</h2>
+        <p>I am a Computer Science and Engineering student at IHRD College of Engineering, Attingal, with a passion for software development and modern web technologies. I enjoy building practical applications that solve real-world problems while continuously expanding my technical knowledge and programming skills.</p>
+      </section>
 
-    <section class="section grid-two">
-      <div class="card">
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>Python</li>
-          <li>C</li>
-          <li>HTML5</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Quick Learner</li>
-          <li>Adaptability</li>
-          <li>Teamwork</li>
-          <li>Communication</li>
-          <li>Critical Thinking</li>
-          <li>Time Management</li>
-        </ul>
-      </div>
-    </section>
+      <section id="skills" class="section reveal">
+        <div class="section-heading">
+          <h2>Skills</h2>
+          <p>Core strengths and tools I’m building with.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="glass-card skill-card">
+            <div class="skill-row">
+              <span>Python</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="glass-card skill-card">
+            <div class="skill-row">
+              <span>C</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+          </div>
+          <div class="glass-card skill-card">
+            <div class="skill-row">
+              <span>HTML5</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+          </div>
+          <div class="glass-card skill-card">
+            <div class="skill-row">
+              <span>JavaScript</span>
+              <span>70%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+      </section>
 
-    <section class="section grid-two">
-      <div class="card">
-        <h3>Positions</h3>
-        <ul>
-          <li>Media Team, FOSS</li>
-          <li>Operation Team, IEDC</li>
-          <li>Joint Secretary, ISTE</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Languages</h3>
-        <ul>
-          <li>English</li>
-          <li>Malayalam</li>
-        </ul>
-      </div>
-    </section>
+      <section id="education" class="section reveal glass-card">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>IHRD College of Engineering, Attingal</p>
+            <span>2025 - 2029</span>
+          </div>
+        </div>
+      </section>
 
-    <section class="section projects-section">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Food Barcode Scanner</h3>
-          <p>A smart application that scans food product barcodes and displays relevant product information to help users make informed purchasing decisions.</p>
-        </article>
-        <article class="project-card">
-          <h3>Daily Planner</h3>
-          <p>A productivity application designed to organize daily tasks, schedules, and reminders through a simple and user-friendly interface.</p>
-        </article>
-      </div>
-    </section>
+      <section id="projects" class="section reveal">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <p>Selected applications I’ve worked on.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card glass-card">
+            <div class="project-image">📦</div>
+            <h3>Food Barcode Scanner</h3>
+            <p>A smart application that scans food product barcodes and displays useful product information to support better purchasing decisions.</p>
+          </article>
+          <article class="project-card glass-card">
+            <div class="project-image">🗓️</div>
+            <h3>Daily Planner</h3>
+            <p>A productivity tool for organizing daily tasks, reminders, and schedules through a simple and clean interface.</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="section grid-two">
-      <div class="card">
-        <h3>Interests</h3>
-        <ul>
-          <li>Software Development</li>
-          <li>Web Development</li>
-          <li>Artificial Intelligence</li>
-          <li>UI/UX Design</li>
-          <li>Problem Solving</li>
-          <li>Learning New Technologies</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Languages</h3>
-        <ul>
-          <li>English</li>
-          <li>Malayalam</li>
-        </ul>
-      </div>
-    </section>
+      <section id="positions" class="section reveal glass-card">
+        <h2>Positions & Achievements</h2>
+        <div class="position-list">
+          <div>
+            <h3>FOSS Club</h3>
+            <p>Media Team Member</p>
+          </div>
+          <div>
+            <h3>IEDC Club</h3>
+            <p>Operation Team Member</p>
+          </div>
+          <div>
+            <h3>ISTE</h3>
+            <p>Joint Secretary</p>
+          </div>
+        </div>
+      </section>
 
-    <section class="section objective-section">
-      <h2>Career Objective</h2>
-      <p>To become a skilled software engineer by continuously learning modern technologies, building impactful software solutions, and contributing to innovative projects that solve real-world challenges.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-    </div>
-  </footer>
+      <section id="contact" class="section reveal glass-card contact-card">
+        <h2>Contact</h2>
+        <p>Let’s build something impactful together.</p>
+        <a class="btn btn-primary" href="mailto:ameen@example.com">Email Me</a>
+        <div class="social-links social-links-inline">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
