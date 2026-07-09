@@ -1,6 +1,0 @@
-Ameen Anas
-Computer Science Engineering Student
-IHRD College of Engineering, Attingal
-Skills: Python, C, HTML5, JavaScript
-Projects: Food Barcode Scanner, Daily Planner
-Positions: Media Team - FOSS Club, Operation Team - IEDC, Joint Secretary - ISTE
