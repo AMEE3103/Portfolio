@@ -142,11 +142,14 @@ section:last-of-type{ border-bottom:none; }
 .positions-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
 @media(max-width:720px){ .positions-grid{ grid-template-columns:1fr; } }
 .position-card{
-  background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px;
-  transition:border-color .2s, transform .2s;
+  display:block; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px;
+  transition:border-color .2s, transform .2s, box-shadow .2s;
+  text-decoration:none; color:inherit; cursor:pointer;
 }
-.position-card:hover{ border-color:var(--trace); transform:translateY(-3px); }
-.position-card h3{ font-size:1rem; margin-bottom:8px; }
+.position-card:hover{ border-color:var(--trace); transform:translateY(-3px); box-shadow:0 8px 24px -12px var(--trace); }
+.position-card h3{ font-size:1rem; margin-bottom:8px; display:flex; align-items:center; gap:6px; }
+.link-arrow{ font-size:0.85rem; color:var(--trace); opacity:0.6; transition:opacity .2s, transform .2s; }
+.position-card:hover .link-arrow{ opacity:1; transform:translate(2px,-2px); }
 .role-tag{ font-size:0.78rem; color:var(--trace); }
 
 /* ---- contact ---- */
